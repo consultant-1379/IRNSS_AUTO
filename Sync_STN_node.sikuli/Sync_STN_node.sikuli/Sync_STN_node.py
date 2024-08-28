@@ -1,0 +1,36 @@
+def GRAN_STN_Synch:
+    find("1518004050220.png")
+    click("1518004050220.png")
+    type("1518004117159.png", "cex_client &"+Key.ENTER)
+    wait(60)
+    find("1518586726397.png")
+    click("1518586726397.png")
+    find("1518604664696.png")
+    click("1518586795768.png")
+    find("1518587346472.png")
+    click("1518587362037.png")
+    wait(2)
+    find("1518586849425.png")
+    click("1518586872835.png")
+    wait(2)
+    find("1518586895147.png")
+    rightClick("1518586895147.png")
+    wait(2)
+    find("1518586972646.png")
+    click("1518586990368.png")
+    find("1518587031303.png")
+    click("1518587031303.png")
+    wait(120)
+    if(exists("1519272388902.png")):
+        print"Discovered successfully"
+        
+    find("1521024238258.png")
+    rightClick("1521024238258.png")
+    wait(2)
+    find("1518586972646.png")
+    click("1518586990368.png")
+    find("1518587031303.png")
+    click("1518587031303.png")
+    wait(120)
+    if(exists("1519272388902.png")):
+        print"Discovered successfully"  

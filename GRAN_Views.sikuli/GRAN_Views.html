@@ -1,0 +1,201 @@
+
+<html>
+   <head>
+      <style type="text/css">
+         .sikuli-code {
+            font-size: 20px;
+            font-family: "Osaka-mono", Monospace;
+            line-height: 1.5em;
+            display:table-cell;
+            white-space: pre-wrap;       /* css-3 */
+            white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+            white-space: -pre-wrap;      /* Opera 4-6 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+            width: 99%;   /* remove horizontal scroll-bar when viewing in IE7 */
+         }
+         .sikuli-code img {
+            vertical-align: middle;
+            margin: 2px;
+            border: 1px solid #ccc;
+            padding: 2px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-box-shadow: 1px 1px 1px gray;
+            -webkit-box-shadow: 1px 1px 2px gray;
+         }
+         .kw {
+            color: blue;
+         }
+         .skw {
+            color: rgb(63, 127, 127);
+         }
+
+         .str {
+            color: rgb(128, 0, 0);
+         }
+
+         .dig {
+            color: rgb(128, 64, 0);
+         }
+
+         .cmt {
+            color: rgb(200, 0, 200);
+         }
+
+         h2 {
+            display: inline;
+            font-weight: normal;
+         }
+
+         .info {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            display: none;
+         }
+
+         a {
+            color: #9D2900;
+         }
+
+         body {
+            font-family: "Trebuchet MS", Arial, Sans-Serif;
+         }
+
+      </style>
+   </head>
+<body>
+<div class="info">
+<h2>GRAN_Views.sikuli</h2> <a href="GRAN_Views.zip">(Download this script)</a>
+</div>
+<pre class="sikuli-code">
+<span class="kw">def</span> GRAN_BSc117_Views:
+
+    <span class="skw">click</span>(<img src="1519635143061.png" />)
+    <span class="skw">wait</span>(<span class="dig">5</span>)
+    <span class="skw">click</span>(<img src="1520421373583.png" />)
+    <span class="skw">wait</span>(<span class="dig">3</span>)
+    <span class="skw">click</span>(<img src="1520421391629.png" />)
+    <span class="skw">wait</span>(<span class="dig">2</span>)
+    <span class="skw">click</span>(<img src="1519635199932.png" />)
+    <span class="skw">type</span>(Key.DOWN+Key.ENTER)
+    <span class="skw">wait</span>(<span class="dig">5</span>)
+    <span class="kw">if</span> exists(<img src="1519635294531.png" />):
+       <span class="kw">print</span>(<span class="str">"Advanced search result view is opened"</span>)
+    <span class="skw">click</span>(<img src="1519635353030.png" />)
+    <span class="skw">wait</span>(<span class="dig">2</span>)
+    <span class="skw">click</span>(<img src="1519635373818.png" />)
+    <span class="skw">wait</span>(<span class="dig">10</span>)
+    <span class="kw">if</span> exists(<img src="1520421446785.png" />):
+        <span class="kw">print</span>(<span class="str">"BSIM view is opened"</span>)
+    <span class="skw">click</span>(<img src="1519635353030.png" />)
+    <span class="skw">wait</span>(<span class="dig">2</span>)
+    <span class="skw">click</span>(<img src="1519635802833.png" />)
+    <span class="skw">wait</span>(<span class="dig">10</span>)
+    <span class="kw">if</span> exists(<img src="1519635833840.png" />):
+        <span class="kw">print</span> (<span class="str">"Bulk CM progress view is opened"</span>)
+    <span class="skw">click</span>(<img src="1519635353030.png" />)
+    <span class="skw">wait</span>(<span class="dig">2</span>)
+    <span class="skw">click</span>(<img src="1519635870430.png" />)
+    <span class="skw">wait</span>(<span class="dig">10</span>)
+    <span class="kw">if</span> exists(<img src="1519635951966.png" />):
+        <span class="kw">print</span>(<span class="str">"Conflicts view is opened"</span>)
+    <span class="skw">click</span>(<img src="1519635353030.png" />)
+    <span class="skw">wait</span>(<span class="dig">2</span>)
+    <span class="skw">click</span>(<img src="1519640455371.png" />)
+    <span class="skw">wait</span>(<span class="dig">10</span>)
+    <span class="kw">if</span> exists(<img src="1519640481070.png" />):
+        <span class="kw">print</span>(<span class="str">"CIF Logs is opened"</span>)
+    <span class="skw">click</span>(<img src="1519635353030.png" />)
+    <span class="skw">wait</span>(<span class="dig">2</span>)
+    <span class="skw">click</span>(<img src="1519636000455.png" />)
+    <span class="skw">wait</span>(<span class="dig">10</span>)
+    <span class="kw">if</span> exists(<img src="1519636068166.png" />):
+        <span class="kw">print</span>(<span class="str">"Compare MO view is opened"</span>)
+    <span class="skw">click</span>(<img src="1519635353030.png" />)
+    <span class="skw">wait</span>(<span class="dig">2</span>)
+    <span class="skw">click</span>(<img src="1519636145256.png" />)
+    <span class="skw">wait</span>(<span class="dig">10</span>)
+    <span class="kw">if</span> exists(<img src="1519636360288.png" />):
+        <span class="kw">print</span>(<span class="str">"Content view is opened"</span>)
+    <span class="skw">click</span>(<img src="1519635353030.png" />)
+    <span class="skw">wait</span>(<span class="dig">2</span>)
+    <span class="skw">click</span>(<img src="1519637222994.png" />)
+    <span class="kw">if</span> exists(<img src="1519637323147.png" />):
+        <span class="kw">print</span> (<span class="str">"Filter view is opened"</span>)
+    <span class="skw">click</span>(<img src="1519635353030.png" />)
+    <span class="skw">wait</span>(<span class="dig">2</span>)
+    <span class="skw">click</span>(<img src="1519637619123.png" />)
+    <span class="skw">wait</span>(<span class="dig">10</span>)
+    <span class="kw">if</span> exists(<img src="1519637659449.png" />):
+        <span class="kw">print</span>(<span class="str">"MO Browser view is opened"</span>)
+    <span class="skw">click</span>(<img src="1519635353030.png" />)
+    <span class="skw">wait</span>(<span class="dig">2</span>)
+    <span class="skw">click</span>(<img src="1519637702723.png" />)
+    <span class="skw">wait</span>(<span class="dig">10</span>)
+    <span class="kw">if</span> exists(<img src="1519639017798.png" />):
+        <span class="kw">print</span>(<span class="str">"PCA view is opened"</span>)
+    <span class="skw">click</span>(<img src="1519635353030.png" />)
+    <span class="skw">wait</span>(<span class="dig">2</span>)
+    <span class="skw">click</span>(<img src="1519639057783.png" />)
+    <span class="skw">wait</span>(<span class="dig">10</span>)
+    <span class="kw">if</span> exists(<img src="1519639096887.png" />):
+        <span class="kw">print</span>(<span class="str">"Progress view is opened"</span>)
+    <span class="skw">click</span>(<img src="1519635353030.png" />)
+    <span class="skw">wait</span>(<span class="dig">2</span>)
+    <span class="skw">click</span>(<img src="1519639140604.png" />)
+    <span class="skw">wait</span>(<span class="dig">10</span>)
+    <span class="kw">if</span> exists(<img src="1519639177883.png" />):
+        <span class="kw">print</span>(<span class="str">"Properties view is opened"</span>)
+    <span class="skw">click</span>(<img src="1519635353030.png" />)
+    <span class="skw">wait</span>(<span class="dig">2</span>)
+    <span class="skw">click</span>(<img src="1519639359788.png" />)
+    <span class="skw">wait</span>(<span class="dig">10</span>)
+    <span class="kw">if</span> exists(<img src="1519639407547.png" />):
+        <span class="kw">print</span>(<span class="str">"RAN powe save view is opened"</span>)
+    <span class="skw">click</span>(<img src="1519635353030.png" />)
+    <span class="skw">wait</span>(<span class="dig">2</span>)
+    <span class="skw">click</span>(<img src="1519639444826.png" />)
+    <span class="skw">wait</span>(<span class="dig">10</span>)
+    <span class="kw">if</span> exists(<img src="1519639496260.png" />):
+        <span class="kw">print</span>(<span class="str">"RBS Reparenting Manager view is opened"</span>)
+    <span class="skw">click</span>(<img src="1519635353030.png" />)
+    <span class="skw">wait</span>(<span class="dig">2</span>)
+    <span class="skw">click</span>(<img src="1519639550305.png" />)
+    <span class="skw">wait</span>(<span class="dig">10</span>)
+    <span class="kw">if</span> exists(<img src="1519639574028.png" />):
+       <span class="kw">print</span>(<span class="str">"Relations view is opened"</span>)
+    <span class="skw">click</span>(<img src="1519635353030.png" />)
+    <span class="skw">wait</span>(<span class="dig">2</span>)
+    <span class="skw">click</span>(<img src="1519639614385.png" />)
+    <span class="skw">wait</span>(<span class="dig">10</span>)
+    <span class="kw">if</span> exists(<img src="1519639645926.png" />):
+        <span class="kw">print</span>(<span class="str">"Scheduled jobs view is opened"</span>)
+    <span class="skw">click</span>(<img src="1519635353030.png" />)
+    <span class="skw">wait</span>(<span class="dig">2</span>)
+    <span class="skw">click</span>(<img src="1519639738510.png" />)
+    <span class="skw">wait</span>(<span class="dig">10</span>)
+    <span class="kw">if</span> exists(<img src="1519639767030.png" />):
+        <span class="kw">print</span>(<span class="str">"Selection view is opened"</span>)
+    <span class="skw">click</span>(<img src="1519635353030.png" />)
+    <span class="skw">wait</span>(<span class="dig">2</span>)
+    <span class="skw">click</span>(<img src="1519639799805.png" />)
+    <span class="skw">wait</span>(<span class="dig">10</span>)
+    <span class="kw">if</span> exists(<img src="1519639830651.png" />):
+        <span class="kw">print</span>(<span class="str">"SON View is opened"</span>)
+    <span class="skw">click</span>(<img src="1519635353030.png" />)
+    <span class="skw">wait</span>(<span class="dig">2</span>)
+    <span class="skw">click</span>(<img src="1519639868507.png" />)
+    <span class="skw">wait</span>(<span class="dig">10</span>)
+    <span class="kw">if</span> exists(<img src="1519639935888.png" />):
+        <span class="kw">print</span>(<span class="str">"Subnetwork consistency report view is opened"</span>)
+    <span class="skw">click</span>(<img src="1519635353030.png" />)
+    <span class="skw">wait</span>(<span class="dig">2</span>)
+    <span class="skw">click</span>(<img src="1519639965502.png" />)
+    <span class="skw">wait</span>(<span class="dig">10</span>)
+    <span class="kw">if</span> exists(<img src="1519639992419.png" />):
+        <span class="kw">print</span>(<span class="str">"Utilities view is opened"</span>)
+</pre>
+</body>
+</html>
